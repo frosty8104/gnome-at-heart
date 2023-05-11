@@ -1,18 +1,30 @@
 /*
-  text color: #fec024 (gold)
-  text color: #ffec88 lt yellow)
+  text-color: #fec024 (gold)
+  text-color: #ffec88 lt yellow)
   text-shadow: #cd661d (lt brown)
-  toons: .ire, .sara, .ny, .gny, .raz, .boum, .soly, .gnawm, .ell, .quyl, .brom, .em, .jyn, .tam, .lina, .kiri, .ruff, .nuff, .muff, .tuff, .moya, .lyri, .nuffy, .niq, .sny, .doom, .taly, .gnome, .noum, .roam, .gopher, .tanky 
+  toons: .ire, .sara, .ny, .gny, .raz, 
+  .boum, .soly, .gnawm, .ell, .quyl, 
+  .brom, .em, .jyn, .tam, 
+  .lina, .kiri, .ruff, .nuff, .muff, .tuff, 
+  .moya, .lyri, .nuffy, .niq, .sny, .doom, .taly, .gnome, .noum, .roam, .gopher, .tanky 
   misc: .note, .stories
   characters: h3, p, .race, .class, .spec, .hair, .eye, .gear
 */
 /* GNOME AT HEART STYLESHEET */
-body {
+html {
   font-size: 16px;
-  background: url(../img/gnometree.png);
+}
+body {
+  align-items: center;
+  background: url(../img/gnometree.jpg);
   background-repeat: no-repeat;
-  background-size: 1600px;
+  background-size: cover;
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+  justify-content: center;
   max-width: 1200px;
+  width: 100%;
 }
 header {
   color: #fec024;
@@ -34,10 +46,10 @@ header h6 {
 }
 /* NAVIGATION */
 #roster {
-  width: 15%;
+  width: 10%;
 }
 nav {
-  width: 80%;
+  width: 100%;
 }
 nav ul li {
   display: inline-block;
@@ -51,238 +63,181 @@ nav img {
   width: 30%;
 }
 /* CHARACTERS */
+main {
+  height: 100%;
+  width: 100%;
+}
 #toons {
-  float: left;
+  background: none;
+  display: block;
+  height: 70%;
+  margin: auto;
+  position: relative;
+  width: 80%;
 }
 #toons ul li {
- display: inline-block;
+  display: inline-block;
 }
 #toons ul li a {
+  color: #fec024;
   font-size: 1em;
   text-decoration: none;
-  color: #fec024;
 }
 /* MAGE */
 .ire {
+  bottom: 20%;
+  left: 70%;
   position: absolute;
-  top: 19.7%;
-  left: 45.7%;
   text-shadow: 1px 1px #cd661d;
 }
 .sara {
   position: absolute;
-  top: 19.7%;
-  left: 50.3%;
   text-shadow: 1px 1px #cd661d;
 }
 .ny {
+
   position: absolute;
-  top: 24%;
-  left: 48%;
   text-shadow: 1px 1px #cd661d;
 }
 .gny {
   position: absolute;
-  top: 22.5%;
-  left: 40%;
   text-shadow: 1px 1px #cd661d;
 }
 .nuff {
   position: absolute;
-  top: 34%;
-  left: 45.5%;
   text-shadow: 1px 1px #cd661d;
 }
 .raz {
   position: absolute;
-  top: 38%;
-  left: 43.7%;
   text-shadow: 1px 1px #cd661d;
 }
 /* PRIEST */
 .kiri {
   position: absolute;
-  top: 16.5%;
-  left: 43.2%;
   text-shadow: 1px 1px #cd661d;
 }
 .lina {
   position: absolute;
-  top: 16.5%;
-  left: 36.5%;
   text-shadow: 1px 1px #cd661d;
 }
 .muff {
   position: absolute;
-  top: 22%;
-  left: 31.5%;
   text-shadow: 1px 1px #cd661d;
 }
 .ruff {
   position: absolute;
-  top: 34%;
-  left: 35%;
   text-shadow: 1px 1px #cd661d;
 }
 .tuff {
   position: absolute;
-  top: 22%;
-  left: 27.6%;
   text-shadow: 1px 1px #cd661d;
 }
 /* DRUID */
 .tam {
   position: absolute;
-  top: 21.9%;
-  left: 55%;
   text-shadow: 1px 1px #cd661d;
 }
 .brom {
   position: absolute;
-  top: 37%;
-  left: 54.9%;
   text-shadow: 1px 1px #cd661d;
 }
 .em {
   position: absolute;
-  top: 16.5%;
-  left: 53%;
   text-shadow: 1px 1px #cd661d
 }
 .jyn {
   position: absolute;
-  top: 16.5%;
-  left: 59.5%;
   text-shadow: 1px 1px #cd661d
 }
 /* HUNTER */
 .boum {
   position: absolute;
-  top: 56%;
-  left: 35%;
   text-shadow: 1px 1px #cd661d;
 }
 .gnawm {
   position: absolute;
-  top: 47%;
-  left: 28.5%;
   text-shadow: 1px 1px #cd661d;
 }
 .ell {
   position: absolute;
-  top: 32%;
-  left: 24.5%;
   text-shadow: 1px 1px #cd661d;
 }
 .q {
   position: absolute;
-  top: 39%;
-  left: 23.7%;
   text-shadow: 1px 1px #cd661d;
 }
 .soly {
   position: absolute;
-  top: 51%;
-  left: 37%;
   text-shadow: 1px 1px #cd661d;
 }
 /* ROGUE */
 .lyri {
   position: absolute;
-  top: 21%;
-  left: 70.5%;
   text-shadow: 1px 1px #cd661d;
 }
 .niq {
   position: absolute;
-  top: 25%;
-  left: 65%;
   text-shadow: 1px 1px #cd661d;
 }
 .nuf {
   position: absolute;
-  top: 19.5%;
-  left: 64.5%;
   text-shadow: 1px 1px #cd661d;
 }
 .sny {
   position: absolute;
-  top: 31.5%;
-  left: 64%;
   text-shadow: 1px 1px #cd661d;
 }
 /* MONK */
 .gnis {
   position: absolute;
-  top: 34.5%;
-  left: 75%;
   text-shadow: 1px 1px #cd661d; 
 }
 .gnome {
   position: absolute;
-  top: 50%;
-  left: 66%;
   text-shadow: 1px 1px #cd661d;
 }
 .noum {
   position: absolute;
-  top: 27.5%;
-  left: 75%;
   text-shadow: 1px 1px #cd661d;
 }
 .roam {
   position: absolute;
-  top: 41.5%;
-  left: 70%;
   text-shadow: 1px 1px #cd661d;
 }
 .doom {
   position: absolute;
-  top: 56.5%;
-  left: 72.5%;
   text-shadow: 1px 1px #cd661d;
 }
 /* WARRIOR */
 .gopher {
   position: absolute;
-  top: 70%;
-  left: 70.2%;
   text-shadow: 1px 1px #cd661d;
 }
 .tanky {
   position: absolute;
-  top: 60.5%;
-  left: 67.5%;
   text-shadow: 1px 1px #cd661d;
 }
 /* PALADIN */
 .moya {
   position: absolute;
-  top: 60%;
-  left: 60%;
   text-shadow: 1px 1px #cd661d;
 }
 .stories {
   position: absolute;
-  top: 63%;
-  left: 48%;
   text-shadow: 1px 1px #cd661d;
   font-weight: bold;
   text-transform: uppercase;
 }
 .note {
   color: #fec024;
-  text-shadow: 1px 1px #cd661d;
-  position: absolute;
-  top: 85%;
-  left: 39%;
   font-size: 1em;
-}
-#script {
-  color: #fec024;
+  left: 50%;
   position: absolute;
-  top: 39%;
-  left: 43.7%;
-  text-align: left;
   text-shadow: 1px 1px #cd661d;
+}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 1200px) {
+
 }
