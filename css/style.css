@@ -1,6 +1,6 @@
 /*
   text-color: #fec024 (gold)
-  text-color: #ffec88 lt yellow)
+  text-color: #ffec88 (lt yellow)
   text-shadow: #cd661d (lt brown)
   toons: .ire, .sara, .ny, .gny, .raz, 
   .boum, .soly, .gnawm, .ell, .quyl, 
@@ -18,35 +18,32 @@ body {
   align-items: center;
   background: url(../img/gnometree.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   display: flex;
   flex-flow: row wrap;
-  height: 100%;
   justify-content: center;
-  max-width: 1200px;
-  width: 100%;
 }
 header {
   color: #fec024;
 }
 header h1 {
-  font-size: 2em;
+  font-size: 1em;
   font-weight: bold;
   text-align: center;
 }
 header h3 {
   color: #ffec88;
-  font-size: 1.5em;
+  font-size: 0.75em;
   text-align: center;
   text-shadow: 2px 2px #fec024;
 }
 header h6 {
-  font-size: 0.75em;
+  font-size: 0.30em;
   text-align: center;
 }
 /* NAVIGATION */
 #roster {
-  width: 10%;
+  width: 5%;
 }
 nav {
   width: 100%;
@@ -60,7 +57,7 @@ nav ul li a {
   text-transform: uppercase;
 }
 nav img {
-  width: 30%;
+  width: 100%;
 }
 /* CHARACTERS */
 main {
@@ -235,9 +232,50 @@ main {
   position: absolute;
   text-shadow: 1px 1px #cd661d;
 }
+.rotation {
+  display: none;
+}
 @media (min-width: 768px) {
-
+  body {
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+  }
+  header h1 {
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+  }
+  header h3 {
+    color: #ffec88;
+    font-size: 1em;
+    text-align: center;
+    text-shadow: 2px 2px #fec024;
+  }
+  header h6 {
+    font-size: 0.5em;
+    text-align: center;
+  }
 }
 @media (min-width: 1200px) {
-
+  body {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+  header h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+  }
+  header h3 {
+    color: #ffec88;
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 2px 2px #fec024;
+  }
+  header h6 {
+    font-size: 0.75em;
+    text-align: center;
+  }
 }
