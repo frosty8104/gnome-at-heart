@@ -232,9 +232,6 @@ main {
   position: absolute;
   text-shadow: 1px 1px #cd661d;
 }
-.rotation {
-  display: none;
-}
 @media (min-width: 768px) {
   body {
     background-size: contain;
